@@ -10,14 +10,15 @@
         py-3
         rounded-lg
         focus:outline-none
-          focus:ring
-          focus:ring-offset-2
-          uppercase
-          tracking-wider
-          font-semibold
-          text-sm
-          sm:text-base;
+        focus:ring
+        focus:ring-offset-2
+        uppercase
+        tracking-wider
+        font-semibold
+        text-sm
+        sm:text-base;
   }
+
   .btn-primary {
     @apply bg-indigo-500
           hover:bg-indigo-400
