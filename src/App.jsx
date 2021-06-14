@@ -6,9 +6,9 @@ import DestinationCard from './components/DestinationCard'
 export default function App() {
   return (
     <div>
-      <div class='bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5'>
+      <div className='bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5'>
         <div
-          class='
+          className='
           px-8
           py-12
           max-w-md
@@ -21,10 +21,10 @@ export default function App() {
           2xl:col-span-2
         '
         >
-          <div class='xl:max-w-xl'>
-            <img class='h-10' src='/img/logo.svg' alt='Workcation' />
+          <div className='xl:max-w-xl'>
+            <img className='h-10' src='/img/logo-brand.svg' alt='Workcation' />
             <img
-              class='
+              className='
               mt-6
               rounded-lg
               shadow-xl
@@ -39,10 +39,12 @@ export default function App() {
               alt='Woman workcationing on the beach'
             />
             <h1
-              class='
+              className='
               mt-6
               text-2xl
-              font-bold
+              font-headline
+              tracking-tight
+              font-semibold
               text-gray-900
               sm:mt-8
               sm:text-4xl
@@ -52,16 +54,16 @@ export default function App() {
             >
               You can work from anywhere.
               <br />
-              <span class='text-indigo-500'>Take advantage of it.</span>
+              <span className='text-brand'>Take advantage of it.</span>
             </h1>
-            <p class='mt-2 text-gray-600 sm:mt-4 sm:text-xl'>
+            <p className='mt-2 text-gray-600 sm:mt-4 sm:text-xl'>
               Workcation helps you find work-friendly rentals in beautiful
               locations so you can enjoy some nice weather even when you're not
               on vacation.
             </p>
-            <div class='mt-4 space-x-1 sm:mt-6'>
+            <div className='mt-4 space-x-2 sm:mt-6'>
               <a
-                class='btn
+                className='btn
                 btn-primary
                 shadow-lg
                 hover:-translate-y-0.5
@@ -72,15 +74,15 @@ export default function App() {
               >
                 Book your escape
               </a>
-              <a class='btn btn-secondary' href='#'>
+              <a className='btn btn-secondary' href='#'>
                 Learn more
               </a>
             </div>
           </div>
         </div>
-        <div class='hidden relative lg:block 2xl:col-span-3'>
+        <div className='hidden relative lg:block 2xl:col-span-3'>
           <img
-            class='absolute inset-0 w-full h-full object-cover object-center'
+            className='absolute inset-0 w-full h-full object-cover object-center'
             src='/img/beach-work.jpeg'
             alt='Woman workcationing on the beach'
           />
