@@ -16,7 +16,8 @@
         tracking-wider
         font-semibold
         text-sm
-        sm:text-base;
+        tablet:text-base
+        mobile:text-sm;
   }
 
   .btn-primary {

@@ -8,17 +8,7 @@ export default function App() {
     <div>
       <div className='bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5'>
         <div
-          className='
-          px-8
-          py-12
-          max-w-md
-          mx-auto
-          sm:max-w-xl
-          lg:px-12
-          lg:py-24
-          lg:max-w-full
-          xl:mr-0
-          2xl:col-span-2
+          className='px-8 py-12 max-w-md mobile:mx-auto mobile:max-w-3xl tablet:max-w-3xl sm:max-w-5xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2
         '
         >
           <div className='xl:max-w-xl'>
@@ -28,10 +18,10 @@ export default function App() {
               mt-6
               rounded-lg
               shadow-xl
-              sm:mt-8
-              sm:h-64
-              sm:w-full
-              sm:object-cover
+              tablet:mt-8
+              tablet:h-64
+              tablet:w-full
+              tablet:object-cover
               object-center
               lg:hidden
             '
@@ -46,8 +36,8 @@ export default function App() {
               tracking-tight
               font-semibold
               text-gray-900
-              sm:mt-8
-              sm:text-4xl
+              tablet:mt-8
+              tablet:text-4xl
               lg:text-3xl
               xl:text-4xl
             '
@@ -56,12 +46,12 @@ export default function App() {
               <br />
               <span className='text-brand'>Take advantage of it.</span>
             </h1>
-            <p className='mt-2 text-gray-600 sm:mt-4 sm:text-xl'>
+            <p className='mt-2 text-gray-600 tablet:mt-4 tablet:text-xl'>
               Workcation helps you find work-friendly rentals in beautiful
               locations so you can enjoy some nice weather even when you're not
               on vacation.
             </p>
-            <div className='mt-4 space-x-2 sm:mt-6'>
+            <div className='mt-4 space-x-2 tablet:mt-6'>
               <a
                 className='btn
                 btn-primary
@@ -89,13 +79,13 @@ export default function App() {
         </div>
       </div>
 
-      <div className='max-w-md sm:max-w-xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-full mx-auto px-8 lg:px-12 py-8'>
+      <div className='max-w-md mobile:max-w-2xl mobile:mx-auto tablet:max-w-3xl sm:max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-full tablet:mx-auto px-8 lg:px-12 py-8'>
         <h2 className='text-xl text-gray-900'>Popular Destinations</h2>
         <p className='mt-2 text-gray-600'>
           A selection of great work-friendly cities with lots to see and
           explore.
         </p>
-        <div className='mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
+        <div className='mt-6 grid gap-6 tablet:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
           {popularDestinations.map((destination) => (
             <DestinationCard destination={destination} key={destination.city} />
           ))}

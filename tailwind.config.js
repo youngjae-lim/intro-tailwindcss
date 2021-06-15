@@ -1,12 +1,19 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [],
+  purge: {
+    // enabled: true,
+    content: ['./src/**/*.jsx', './index.html'],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      xs: '268px',
-      ...defaultTheme.screens,
+      mobile: '320px',
+      tablet: '690px',
+      sm: '769px',
+      lg: '1025px',
+      xl: '1201px',
+      '2xl': '1536px',
     },
     extend: {
       colors: {
